@@ -5,9 +5,9 @@ describe('Amazon',()=>{
         cy.get('#nav-link-accountList-nav-line-1').trigger('mousehover');
         cy.contains('Sign').click({force:true});
         cy.url().should('include','signin');
-        cy.get('#ap_email').type('shikhaattar@gmail.com');
+        cy.get('#ap_email').type('uni@gmail.com');
         cy.get('#continue').click();
-        cy.get('#ap_password').type('if u want me');
+        cy.get('#ap_password').type('uni123');
         cy.get('#authportal-main-section > div:nth-child(2) > div.a-section.a-spacing-base > div > div > form > div > div:nth-child(7) > div > div > label > div > label > input[type=checkbox]').click();
         cy.get('#signInSubmit').click(); 
         cy.get('#searchDropdownBox')
