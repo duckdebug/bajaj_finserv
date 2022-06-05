@@ -18,11 +18,11 @@ public class MakeMyTrip {
 		driver.manage().window().maximize();
 		
 //		driver.findElement(By.xpath("//li[@class='makeFlex hrtlCenter font10 makeRelative lhUser userLoggedOut']")).click();
-//		driver.findElement(By.id("username")).sendKeys("9815544117");
+//		driver.findElement(By.id("username")).sendKeys("uni123");
 //		Thread.sleep(2000);
 //		driver.findElement(By.xpath("//button[@data-cy='continueBtn']")).click();
 //		Thread.sleep(2000);
-//		driver.findElement(By.xpath("//div[@class='modalFieldInner makeFlex hrtlCenter ']")).sendKeys("271647");
+//		driver.findElement(By.xpath("//div[@class='modalFieldInner makeFlex hrtlCenter ']"));
 //		driver.findElement(By.xpath("//button[@class='capText font16']")).click();
 		driver.findElement(By.xpath("//li[@data-cy='roundTrip']")).click();
 		driver.findElement(By.xpath("//label[@for='fromCity']")).sendKeys("Chandigarh");

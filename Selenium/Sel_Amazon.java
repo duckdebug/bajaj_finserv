@@ -22,17 +22,17 @@ public class Sel_Amazon {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.amazon.in");
 		Actions actions = new Actions(driver);
-//		actions.moveToElement(createWebElement("#nav-link-accountList-nav-line-1", driver));
-//		actions.moveToElement(createWebElement("#nav-flyout-ya-signin > a > span", driver));
-//		actions.click().build().perform();
+		actions.moveToElement(createWebElement("#nav-link-accountList-nav-line-1", driver));
+		actions.moveToElement(createWebElement("#nav-flyout-ya-signin > a > span", driver));
+		actions.click().build().perform();
 		//max the chrome browser
 		driver.manage().window().maximize();
 		
-//		driver.findElement(By.id("ap_email")).sendKeys("abc@gmail.com");
-//		driver.findElement(By.id("continue")).click();
-//		driver.findElement(By.name("password")).sendKeys("abc123");
-//		driver.findElement(By.name("rememberMe")).click();
-//		driver.findElement(By.id("signInSubmit")).click();
+		driver.findElement(By.id("ap_email")).sendKeys("abc@gmail.com");
+		driver.findElement(By.id("continue")).click();
+		driver.findElement(By.name("password")).sendKeys("abc123");
+		driver.findElement(By.name("rememberMe")).click();
+		driver.findElement(By.id("signInSubmit")).click();
 		driver.findElement(By.id("searchDropdownBox")).sendKeys("Electronics");
 		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("IPhone 12");
 		driver.findElement(By.xpath("//input[@id='nav-search-submit-button']")).click();
@@ -40,9 +40,7 @@ public class Sel_Amazon {
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector("#add-to-cart-button")).click();
 		driver.findElement(By.xpath("//span[@id='attach-sidesheet-view-cart-button']//span[@class='a-button-inner']")).click();
-//		checking cart details
-		String title=driver.getTitle();
-		System.out.println(title);
+		
 		
 	}	
 }
